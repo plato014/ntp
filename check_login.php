@@ -73,8 +73,8 @@ if ($row) {
                     alert('ยินดีต้อนรับผู้ดูแลระบบ');
                     window.location.href = 'admin_page.php';
                   </script>";
-        } elseif ($row['position'] == 'member') {
-            $_SESSION['position'] = 'member';
+        } elseif ($row['position'] == 'user') {
+            $_SESSION['position'] = 'user';
             echo "<script>
                     alert('ยินดีต้อนรับสมาชิก');
                     window.location.href = 'profile.php';
